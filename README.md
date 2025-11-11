@@ -1,7 +1,11 @@
 # Prompt-Engineering-for-Data-Wrangling-Interpretation-using-LLMs
 
+## Summary
+This project evaluates and redesigns prompt templates to improve how large language models (Gemini 2.0 Flash) explain data-wrangling steps in Python notebooks.  
+It compares three initial prompts with two redesigned versions across 50 notebooks and 5 datasets, showing a 7% accuracy improvement (from ~89% to ~96%) in structured TSV outputs.
+
 ## Overview
-This bundle contains the notebooks (recipes), prompts, and prompt outputs used in the study on extracting structured **data-wrangling metadata** from static code using **Gemini 2.0 Flash**. The workflow reads a notebook, extracts code cells, and sends them to Gemini along with a task prompt. Gemini returns a **single TSV** summary table with eleven fixed rows. Table-level accuracy is computed against a ground-truth table (prepared by manual code reading) as described in the report.
+This bundle contains the notebooks (recipes), prompts, and prompt outputs used in the study on extracting structured **data-wrangling metadata** from static code using **Gemini 2.0 Flash**. The workflow reads a notebook, extracts code cells, and sends them to Gemini along with a task prompt. Gemini returns a **single TSV** summary table with eleven fixed rows. Table-level accuracy is computed against a ground-truth table (prepared by manual code reading).
 
 > **Note on Dataset 5 / Recipe 1:** The file is an **R script** (`Dataset 5 Recipe 1.R`). The API script targets `.ipynb` notebooks and does not process R scripts. **This one recipe was run in the Gemini online interface.** Its summary table is included in *Prompt_Outputs/Dataset 5.pdf* alongside the other Dataset 5 results.
 
